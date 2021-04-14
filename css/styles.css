@@ -17,6 +17,9 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
     background-color: #ffff;
 }
@@ -24,6 +27,7 @@ body{
 .container{
     display: flex;
     overflow: hidden;
+    margin: 2rem 2rem 2rem 2rem;
     flex-direction: column;
     border-radius: 10px;
 }
@@ -81,4 +85,14 @@ body{
     border-radius: 20em;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+}
+
+@media only screen and (min-width:600px){
+    .container{
+        display: flex;
+        overflow: hidden;
+        margin: 2rem 2rem 2rem 2rem;
+        flex-direction: row;
+        border-radius: 10px;
+    }
 }
