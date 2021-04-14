@@ -9,8 +9,8 @@
     --second-color:hsl(184, 100%, 22%);
     --third-color:hsl(179, 100%, 13%);
 
-    --para-color:hsla(0, 0%, 100%, 0.75);
-    --base-color:hsl(0, 0%, 95%);
+    --para-color:hsla(0, 0%, 91%, 0.75);
+    --base-color:hsl(0, 33%, 94%);
 }
 *,*::before,*::after{
     box-sizing: border-box;
@@ -23,19 +23,25 @@ body{
 
 .container{
     display: flex;
+    overflow: hidden;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .card1,
 .card2,
 .card3{
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .card-heading{
     font-family: var(--font-primary);
     color: var(--base-color);
     font-weight: var(--primary-weight);
+    text-transform:uppercase;
 }
 
 .info{
@@ -65,4 +71,14 @@ body{
 }
 .card3{
     background-color: var(--third-color);
+}
+
+.button{
+    background-color: #ffff;
+    font-family: var(--font-secondary);
+    width: max-content;
+    padding: 0.75rem;
+    border-radius: 20em;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
 }
