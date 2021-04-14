@@ -1,0 +1,98 @@
+:root{
+    --font-primary:'Big Shoulders Display',sans-serif;
+    --font-secondary:'Lexend Deca',sans-serif;
+
+    --primary-weight: 700;
+    --secondary-weight: 400;
+
+    --first-color:hsl(31, 77%, 52%);
+    --second-color:hsl(184, 100%, 22%);
+    --third-color:hsl(179, 100%, 13%);
+
+    --para-color:hsla(0, 0%, 91%, 0.75);
+    --base-color:hsl(0, 33%, 94%);
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #ffff;
+}
+
+.container{
+    display: flex;
+    overflow: hidden;
+    margin: 2rem 2rem 2rem 2rem;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card1,
+.card2,
+.card3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card-heading{
+    font-family: var(--font-primary);
+    color: var(--base-color);
+    font-weight: var(--primary-weight);
+    text-transform:uppercase;
+}
+
+.info{
+    font-family: var(--font-secondary);
+    color: var(--para-color);
+    font-weight: var(--secondary-weight);
+}
+
+.orange{
+    text-decoration: none;
+    color: var(--first-color);
+}
+.olive{
+    text-decoration: none;
+    color: var(--second-color);
+}
+.green{
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+.card1{
+    background-color: var(--first-color);
+}
+.card2{
+    background-color: var(--second-color);
+}
+.card3{
+    background-color: var(--third-color);
+}
+
+.button{
+    background-color: #ffff;
+    font-family: var(--font-secondary);
+    width: max-content;
+    padding: 0.75rem;
+    border-radius: 20em;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+@media only screen and (min-width:600px){
+    .container{
+        display: flex;
+        overflow: hidden;
+        margin: 2rem 2rem 2rem 2rem;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+}
