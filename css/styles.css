@@ -1,0 +1,18 @@
+:root{
+    --font-primary:'Big Shoulders Display',sans-serif;
+    --font-secondary:'Lexend Deca',sans-serif;
+
+    --primary-weight: 700;
+    --secondary-weight: 400;
+
+    --first-color:hsl(31, 77%, 52%);
+    --second-color:hsl(184, 100%, 22%);
+    --third-color:hsl(179, 100%, 13%);
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+}
